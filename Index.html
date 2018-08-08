@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">   <!-- TR karakter sorununu çözer-->
+	<title>Web eğitimim</title>
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body>
+	<h1>Mehmet'in Biyografisi</h1> <!-- En büyük başlık kodu-->
+	<h6>İş Durumu</h6> <!-- En küçük başlık kodudur. diğer boyutlar da 1-6 arasındadır.-->
+	Mehmet Zeki Tokgöz
+	<br> <!-- Alt satıra geçme kodu-->
+	<b>Gençlik Lideri</b> <!-- b=yazıya kalınlık verme kodu-->
+	<br>
+	<i>Siirt Gençlik Merkezi</i> <!-- Eğik italik yazma kodu -->
+	<b><i> 2012-2018...</i></b> <!-- Hem italik hem kalın yazmak için kod -->
+	<br>
+	<u>Mesleği: Sosyal Bilgiler Öğretmeni</u> <!-- altını çizme kodu-->
+	<br>
+	<s>99.99 </s>TL <!-- üstünü çizme kodu-->
+	<br>
+	&emsp; <!-- Paragraf girintisi --> 16.05.1989 tarihinde Siirt ilinde doğdu. 4 kardeşli bir ailenin en küçük üyesidir. İlk ve Ortaöğretim hayatı Siirt'te geçti. Medeni hali Evli
+	 &nbsp; <!-- 1 boşluk bırakma kodu. Her boşluk için birtane bırakmak gerekir -->   &nbsp;&nbsp;&nbsp;09.'.2018 de evlendi....re et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco  ut aliquip ex ea commodo
+	consequat. <p> <!-- Paragraf yapma kodu. paragrafın sonunda kapatılır. --> &emsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	Manisa&nbsp;<abbr title="Celal Bayar Üniversitesi">CBÜ</abbr> de okudu.
+	<!-- "abbr" kodu kısaltmalara açıklama vermek için "title"na yazarak yazılır. --> 
+	<br>
+	4<sub>2</sub>
+	<br>
+	5<sup>3</sup>
+	<br>
+	<img width="250" height="380" src="resim.jpg"> <!-- sayfaya resim ekleme kodları. "widht" genişliği. "height" yüksekliği ayarlar. Tırnak içine resmin dosya adı yazılır. -->
+	<hr> <!-- satır boyunca çizgi çeker -->
+	<a target="_blank" href="http://www.facebook.com/m.z.tokgoz">Facebook profiline git.</a> <!-- gidilecek siteye bağlantı yapar."target" kodu bağlantıyı yeni sayfada açtırır.-->
+	<br>
+	<a target="_blank" href="https://www.facebook.com/m.z.tokgoz"><img width="200" height="300" src="face.png"></a>
+	<br>
+	<span style="font-family: Arial; font-size: 25px; color: orange"><b>Kendisi şu anda Kod Adı 2023 eğitimindedir.(06.08.2018)</b></span> <!-- "span" farklı özelliklerde bir cümle yazmak için açılır ve bu cümle stil, beden, ve veya renklerde yazılabilir.Renkler direk ingilizce isimleri ile yazılabilir. Ara renkler için google ye Color Picker yazarak renk kodlarına ulaşılabilir. -->
+	<br>
+	<span style="font-family: Arial; font-size: 22px; color: blue">Hobileri</span>
+	<ul type="square"> <!-- Tek tip maddelendirme yapar. "type" vererek maddeleme tarzı atayabiliriz. -->
+		<li>Müzik Dinlemek</li>
+		<li>Ata binmek</li>
+		<li>Öğrenmek</li>
+	</ul>
+	<br>
+	<span style="font-family: Arial; font-size: 22px; color: blue">Gitmek istediği yerler</span>
+
+	<ol type=a> <!-- Sıralı maddelendirme yapar. maddelendirmeyi "type" vermezsek numarayla, verirsek verdiğimiz tarza göre  yapar -->
+		<li>Mekke</li>
+		<li>Medine</li>
+		<li>Geri kalan her yer</li>
+	</ol>
+	<br> Birgün kabzımal oldu ve sipariş vermeye başladı. :)
+	<table border="5"width=500> <!-- Tablo kodları başlangıcı -->
+		<tr>
+			<th>Sıra No:</th> <!-- sütunlar -->
+			<th>Stok Adı</th> <!-- sütunlar -->
+			<th>Stok Adedi</th> <!-- sütunlar -->
+		</tr>
+		<tr>
+			<td>1</td> <!-- satırlar -->
+			<td>Elma</td>
+			<td>1300 Kasa</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Şeftali</td> <!-- satırlar -->
+			<td>2000 Kasa</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Karpuz</td>
+			<td>5000 Adet</td> <!-- satırlar -->
+		</tr>
+
+		
+	</table> <!-- Tablo kodları bitişi -->
+	<hr>
+
+	<form method="post" action="islem.php">
+		<label for="ad">Adınız Soyadınız</label>
+		<br>
+		<input type="text" id="ad" name="adsoyad" placeholder="Adınızı Giriniz" required="">
+		<br><br>
+		<label>Şifreniz</label>
+		<br>
+		<input type="password" name="sifre" placeholder="Şifrenizi Giriniz">
+		<br><br>
+		<label>Doğum Tarihiniz</label>
+		<br>
+		<input type="date" name="D.Tarihiniz">
+		<br><br>
+		<label>E-Postanız</label>
+		<br>
+		<input type="email" name="E-Postanız" placeholder="E Postanızı Giriniz">
+		<br><br>
+		<label>Biyografiniz</label>
+		<br>
+		<textarea name="bio" placeholder="Kişi Hakkında"></textarea>
+		<br><br>
+		<input type="submit" name="uyeformunugonder" value="Kaydı Gönder">
+
+	</form>
+	<hr>
+	<div style="border: dotted 4px blue; float: left;">
+		<div class="blok1">1. Blok</div>
+		<div class="blok2">2. Blok</div>
+		<div style="clear: left;"></div>
+	</div>
+<br><br>
+
+</body>
+</html>

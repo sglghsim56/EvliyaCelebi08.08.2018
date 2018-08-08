@@ -1,0 +1,16 @@
+.blok1{
+	border: solid 2px red; 
+	width: 200px; 
+	float: left; 		
+	padding: 10px;
+}						/* burda yazan kodlar normalde html sayfasında blok kodlarında uzunca yazılırdı
+	 ancak bu şekilde css kullanılarak genelleme yapılarak iş kısaltılabilir.*/
+.blok2{
+	border: dashed 3px green; 
+	width: 250px; 
+	float: left; 
+	margin: 10px;
+}
+td{
+	text-align: center;
+}
